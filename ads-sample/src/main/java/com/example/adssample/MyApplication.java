@@ -21,11 +21,11 @@ public class MyApplication extends Application {
         MegaAds.setLocationAwareness(MegaAds.LocationAwareness.TRUNCATED);
         MegaAds.setLocationPrecision(4);
         SdkConfiguration.Builder builder = new SdkConfiguration.Builder("2360/e939915d0a6a7c6d827bdf5441cfe624");
-        if (BuildConfig.DEBUG) {
+//        if (BuildConfig.DEBUG) {
             builder.withLogLevel(MegaAdsLog.LogLevel.DEBUG);
-        } else {
-            builder.withLogLevel(MegaAdsLog.LogLevel.INFO);
-        }
+//        } else {
+//            builder.withLogLevel(MegaAdsLog.LogLevel.INFO);
+//        }
         builder.withLegitimateInterestAllowed(true);
         MegaAds.initializeSdk(this, builder.build(), new SdkInitializationListener() {
             @Override
